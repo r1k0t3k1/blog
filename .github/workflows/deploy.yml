@@ -25,7 +25,6 @@ jobs:
           BASE_PATH: '/blog'
         run: |
           npm run build
-          mkdir build
           touch build/.nojekyll
 
       - name: Upload Artifacts
