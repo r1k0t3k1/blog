@@ -1,4 +1,6 @@
+
 <script>
+  import { base } from '$app/paths';
   import "carbon-components-svelte/css/g90.css";
   import {
     Header,
@@ -33,9 +35,9 @@
 
 <SideNav bind:isOpen={isSideNavOpen}>
   <SideNavItems>
-    <SideNavLink href="/" text="home" on:click={toggle}/>
-    <SideNavLink href="/about" text="about" on:click={toggle}/>
-    <SideNavLink href="/blog" text="blog" on:click={toggle}/>
+    <SideNavLink href="{base}/" text="home" on:click={toggle}/>
+    <SideNavLink href="{base}/about" text="about" on:click={toggle}/>
+    <SideNavLink href="{base}/blog" text="blog" on:click={toggle}/>
   </SideNavItems>
 </SideNav>
 
